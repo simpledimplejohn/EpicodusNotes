@@ -1,4 +1,4 @@
-# __Epicodus Bootcamp Notes __
+# __Epicodus Bootcamp Notes__
 ### by [John Blalock](https://github.com/simpledimplejohn) 
 
 ### __Description__
