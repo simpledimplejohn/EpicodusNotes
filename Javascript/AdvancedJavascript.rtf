@@ -1,0 +1,140 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww12840\viewh7420\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 QUESTION FOR TEACHERS:\
+Lesson # 20 remove html from index.html?\
+\
+Variable = property\
+Function = methods\
+\
+\
+Objects and constructors\
+
+\f1\b0 \
+
+\f0\b RANDOM:\
+
+\f1\b0 function getRandomInt(min, max) \{\
+  return Math.floor(Math.random() * (max - min + 1) + min;\
+\}\
+\
+
+\f0\b Constructor:  long way objects with no information blueprint 
+\f1\b0 \
+Function Dog(name, colors, age) \{\
+ this.name = name;    //creates variable name and puts name into it\
+ this.colors = colors;\
+ this.age = age;\
+\}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 new instance:  
+\f1\b0 \
+Let dog1 = new Dog(\'93falcon\'94, [\'93black\'92, \'93white\'94], 4);\
+Let dog2 = new Dog(\'93Fred\'94, [\'93orange\'94], 4);\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+
+\f0\b Prototype method adds function to an object\
+
+\f1\b0 function dogAtributes(colors, age) \{\
+ Return this.color + \'93 \'93 + this.age;\
+\}\
+dogAtributes.prototype.\
+\
+\
+EVENTS:\
+Event handlers can only run one function at a time\
+Event listeners\
+Btn.addEventListener(typeOfEvent\
+\
+event bubbling\
+ Events bubble upward to other elements\
+ Starts with most nested\
+ \
+event delegation\
+ Can\'92t do an action on something that has not been made yet,\
+ Handlers trigger from parent to all child elements \
+ ul is the parent, li is the child\
+function attachContactListerns() \{\
+$(\'93ul#contacts\'94).on(\'93click\'94,\'94li\'94,function() \{\
+ console.log(\'93the id of this <li> is \'93 + this.id + \'93.\'94);\
+\});\
+\
+DOM manipulation without jQuery\
+GRAB THE ITEM FIRST FROM THE HTML WITH:\
+document.getElementById(\'93#id\'94);\
+document.getElementByClassName(\'93.class\'94)\
+docmuent.getElementByTagName(\'93P\'94)\
+document.querySelector(\'93class, id, or tag\'94);  only grabs 1\
+document.querySelectorAll(\'93P\'94); pushes them all to an array\
+Document.querySelector(\'93h1\'94).innerHTML = \'93You\'92ve Been Hacked!!\'94;\
+document.querySelector("h1").outerHTML = "<h5>You've Been Hacked!!<h5>";\
+USE THESE FOR CHANGING NOT FOR ADDING \
+CHANGE A TAG/ID \
+document.querySelector("jumbotron").className = "john";\
+ADD /REMOVE A CLASS\
+document.querySelector("john").classList.add("test");\
+Document.querySelector(\'93john\'94.classList.delete(\'93test\'94);\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Document.querySelector(\'93john\'94.classList.toggle(\'93test\'94);\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0  FALSE (removes and returns FALSE)\
+ TRUE (adds and returns TRUE)\
+
+\f0\b CHECK IF CLASS IS THERE
+\f1\b0 \
+document.querySelector(\'93John\'94).classList.contains(\'93test\'94);\
+ Returns boolean\
+
+\f0\b CHANGE!
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 document.querySelector(\'93John\'94).hasAttribute(\'93id\'94);\
+ Returns boolean\
+document.querySelector(\'93John\'94).getAttribute(\'93id\'94);\
+document.querySelector(\'93John\'94).setAttribute(\'93id\'94, \'93example\'94);\
+ADD href tag\
+document.querySelector(".john").setAttribute("href", "www.google.com");\
+REMOVE\
+document.querySelector(".john\'94).removeAttribute("href", "www.google.com");\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 APEND CONTENT\
+SLOW WAY\
+let box = document.querySelector(".title");\
+let newElement = document.createElement("a");\
+let newContent = document.createTextNode("This is a link!");\
+newElement.appenedChild(newContent);\
+box.appendChild(newElement);\
+newElement.setAttribute(\'93href\'94, \'93www.google.com\'94);\
+\
+NEW WAY\
+let box = document.querySelector(".title");\
+let newElement = document.createElement("a");\
+newElement.append("This is a like");\
+box.appendChild(newElement);\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 newElement.setAttribute(\'93href\'94, \'93www.google.com\'94);\
+\
+CHANGE CSS\
+Shows what css is there:\
+document.querySelector("h1").style;\
+Change to green\
+document.querySelector("h1").style.color = "green";\
+document.querySelector("h1").style.cssText = "color: red; font-size: 100px";\
+\
+\
+\
+\
+\
+\
+}

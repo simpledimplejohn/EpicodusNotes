@@ -1,0 +1,19 @@
+/* comments */  command /
+
+Color: blue;
+Background-color: 
+Text-align;
+Font-style: italic;
+Font-family: sans-serif;
+Font-size: 20px;
+Line-height: 30px;
+
+
+
+
+FLEX BOX
+.container {
+  display: flex;
+}
+
+  

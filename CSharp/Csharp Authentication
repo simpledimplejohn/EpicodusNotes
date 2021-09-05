@@ -1,0 +1,28 @@
+Asynchronus in C#
+
+async
+await
+
+async can only return void or a task
+Task<int> returns int;
+Task<string> reutnrs string
+Task<IActionResult> returns ActionResult
+
+
+authentication who you are
+authorization what you can do
+
+Identity tool in ASP.NET Core 
+
+ViewModels
+a way of making a view that accesses less of the data, in this case just the user info
+
+
+[AllowAnonymous] 
+
+
+Updates for identity in todolist the following files:
+Views/Items/Index.cshtml //little update to let us know which user is in
+Models/Items.cs //little update 
+Controllers/ItemsController.cs //most of the code
+  //

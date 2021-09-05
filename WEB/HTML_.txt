@@ -1,0 +1,53 @@
+<!DOCTYPE html>                   always on top
+<html lang="en-US">               put next
+<!-- comments -->
+<head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Web page Title</title>
+</head>
+<body>
+<h1> header text block </h1>
+<p> paragraph block </p>
+
+<ul> unordered list
+  <li> list items </li>
+</ul>
+</body>
+</html>
+
+<strong>makes text bold</strong>
+<em>makes text italic</em>
+<a href="http://www.thewebaddress.com/">text</a> anchor tag
+how to link to another file:
+<a href="filename.html">name</a> to file in the same directory
+
+Image
+<img src="theimage.jpg" alt="title of the image here" id=>
+
+.className 
+<div class="className"></div>
+.className {
+width: 50% or px
+border: solid color;
+border-width: 1px;
+}
+
+<span class="highlight"> </span>
+
+<table>
+  <tr> Rows
+    <th>column name</th>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+

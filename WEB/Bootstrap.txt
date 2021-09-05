@@ -1,0 +1,20 @@
+Containers, rows and columns:
+
+<div class="jumbotron">
+  <h1 class="display-4">Jumbotron</h1>
+  <p class"lead">The next bit of text</p>
+</div>  
+  
+
+Grids
+<body>
+  <div class="container">	the container class
+    <div class="row">           first row
+      <div class ="col">        first column
+          Row 1 Col 1           content of box
+Forms
+<form id="formName">
+  <label for="information">A name</label.
+  input id="information" class="form-control"> type="text">
+
+

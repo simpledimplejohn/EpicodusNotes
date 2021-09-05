@@ -1,0 +1,62 @@
+Questions for Alister:
+-are classes like objects?
+-`super`
+
+About React
+-Component-Based, puts code into components, reuses components for DRY code
+-Declarative, what the end result is as oposed to its function
+-Data Model Synchronization, built in functionality for data Synchronization
+-Virtual DOM, more effiecient than other frameworks
+ -Creates a virtual DOM then
+ -Compares Actual DOM to Virtual DOM then
+ -Reconciliation: automatically recauclates changes 
+ -REPEAT
+-Single Page Applications
+-JSX 
+-Just a library
+-VR!! ??
+
+App template creator:
+  `create-react-app` tool
+  use command:
+  `npx create-react-app help-queue` 
+  -npx also bundles npm inside it
+  -will still use npm for managing packages
+    NOTE: using this command automatically downloads latest REACT version
+    If you need to load an earlier version of REACT for compatability use:
+      `npm install --save-exact react-scripts@3.2.0` to specify version
+  Basic Template Settup And Notes
+    -delete three app files
+      -App.js
+      -App.css
+      -App.test.js
+    -delte logo.svg
+    -Package.json 
+      three depedencies
+      -react: core library
+      -react-dom: library for dom interaction
+      -react-scripts: has some create scripts
+      4 NPN commands
+      -start : builds a webpack app, hidden
+      -build
+      -test
+      -eject *** creates problems
+      Also has yarn, but we use npm
+    -Index.js 
+      -ReactDOM.render() method calls App component
+      -renders this in the root div id
+      -App.js is what gets rendered
+Components:
+  -Functional Component
+    A function that returns JSX code stored in a div
+    -must export components inorder to use them
+    -cannot change state, static
+    -use whenever possible to keep thing clean
+  -Class
+    custom class
+    -uses the `super` javascript term
+    -`this.state = {}` what is a state?
+    -must include `render()`
+
+
+

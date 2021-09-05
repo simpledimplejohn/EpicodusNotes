@@ -1,0 +1,18 @@
+Markdown md
+
+#	Headders
+##
+###
+####
+#####
+######
+
+_italics_
+* list elements
+*
+1. numbered list
+2. 
+[link name](http://www.linkhere.com/) 
+![image alt text](http://imagelink.com/)
+
+command-shift-v preview in VS

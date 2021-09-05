@@ -1,0 +1,43 @@
+jQuerry
+
+$() selects an HTML element (p) selects paragraph elements
+.click() event handler listens to elements and responds
+function() anonymous callback function
+
+$("h1").click(function() {
+  alert("This is a heading.");
+)};
+
+$("submit from").submit(function() {
+  what to submit to
+});
+
+$(document).ready(function() {
+  reads the html document first--then performs function (.ready)
+});
+
+id="element we want to select specifically"
+
+.text()    the best
+.prepend() will insert text into the html
+.append() inserts at the bottom
+.before() 
+.after()
+
+.click()
+.show()
+.hide()
+.toggle();  switches hide and show
+
+fadeIn();
+fadeOut();
+fadeToggle();
+slideDown();
+slideUp();
+slideToggle();
+
+remove
+$(this).remove();  "this" whatever was clicked
+
+.html
+$("#grabbingFrom").html(changingWith)

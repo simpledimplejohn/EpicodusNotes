@@ -1,0 +1,99 @@
+javascript notes
+
+// comments everything behind the slashes. Command /
+
+var		early variable
+let		now for variable
+const 		constant integer
+receiver.method();
+
+"string".toUpperCase();		string = receiver
+"string".concat("string2");	string2 = the argument/parameter 
+"string" + "string";		same as concat
+"string".charAt(number);
+Assignment operators
++=				assigns new value to variable or let
+-=
+*=
+/=
+Comparison operators return true false
+<
+>
+<=
+>=
+===
+Datatypes
+typeof ?;		will return datatype
+parselnt();		convert string to number 
+parseFloat();		string to float
+toString();		convert number to string
+FUNCTIONS
+alert("string");	prints to a popup
+prompt("string");	pops up a prompt box to enter
+confirm("string");	pops up a confirm box true false
+console.log("string");  print
+
+function name(){
+  return //returns the function//
+}
+name()  //calls the function//
+
+array.push()    lets you push element to the end DESTRUCTIVE
+array.concat()   adds new element to end NONDESTRUCTIVE
+array.length              returns length
+array[0] = "change"		changes item at that number
+array[0]      			returns item at that number
+lastElementOfArray = array.length -1 OBOE s
+array.unshift(1)		      adds to the beginning of an array
+array.shift();			removes first element of an array
+array.pop()			removes last element
+array.join()			joins array into a string separated with commas
+array.join("")			joins without commas
+array.slice(2)			removes that element
+charAt(0).slice			slice off the first letter
+string.trim			spaces from front and back of a string
+string.includes			looks for a single item in a string
+
+$gshmon333y
+
+array.toString()		turns it into a string
+array1.toString() === array.2.toString()
+const cloneArray = originalArray.slice();		to clone an array without pointers
+
+Loops
+let friendsArray = ["jewels", "dom", "ghost", "gazal", "uv"];
+friendsArray.forEach(function(element) {
+	alert("my friend is " + element);
+});
+for (let index = 1; index <= 3; index += 1) {
+  console.log(index);
+}
+
+forEach:
+const array = [0,1,2,3,4,5];
+let doubledArray = [];
+array.forEach(function(element) {
+  doubledArray.push(element * 2);
+});
+doubledArray;
+
+for:
+const array = [0,1,2,3,4,5];
+let doubledArray = [];
+for (let index = 0; index < array.length; index +=1) {
+  doubledArray.push(array[index] * 2);
+}
+doubledArray;
+
+Array.map()
+const array = [0,1,2,3,4,5];
+const doubledArray = array.map(function(element) {
+  return element * 2;
+});
+doubledArray;
+			
+
+Array.reduce()
+array.filter()
+
+
